@@ -7,7 +7,7 @@ Este proyecto consiste en la implementación de un sistema para tomar fotografí
 ## Funcionamento scripts
 
 El script principal de bash
-```
+```blue
 #!/bin/bash
 
 for ((i = 0 ; i < 10 ; i++)); do
