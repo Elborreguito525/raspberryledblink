@@ -7,7 +7,7 @@ Este proyecto consiste en la implementación de un sistema para tomar fotografí
 ## Funcionamento scripts
 
 El script principal de bash
-'''
+```
 #!/bin/bash
 
 for ((i = 0 ; i < 10 ; i++)); do
@@ -16,4 +16,4 @@ for ((i = 0 ; i < 10 ; i++)); do
   sudo python3 /root/raspberryled.py
   sleep 0
 done
-'''
+```
