@@ -6,7 +6,7 @@ Este proyecto consiste en la implementación de un sistema para tomar fotografí
 
 ## Funcionamento scripts
 
-El script principal de bash
+El script principal de bash que guardamos en la carpeta de root
 ```blue
 #!/bin/bash
 
@@ -17,3 +17,20 @@ for ((i = 0 ; i < 10 ; i++)); do
   sleep 0
 done
 ```
+I luego con el archivo de rasbberry tambien almacenado en la carpeta de root para poder ser exectuado sin tocar el script.
+
+```blue
+import Rpi.GPIO as GPIO
+
+from time import sleep
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(3, GPIO.OUT, initial=GPIO.LOW)
+
+sleep(0.5)
+GPIO.output(3,GPIO.HIGH)
+sleep(0,5)
+GPIO.output(GPIO.LOW)
+```
+
