@@ -17,10 +17,14 @@ for ((i = 0 ; i < 10 ; i++)); do
   sleep 0
 done
 ```
+IMPORTANTE la comanda rapistill no existe en el Raspbery OS normal 
+```blue 
+sudo rpicam-still --output /var/out.jpg
+```
 I luego con el archivo de rasbberry tambien almacenado en la carpeta de root para poder ser exectuado sin tocar el script.
 
 ```blue
-import Rpi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 from time import sleep
 
