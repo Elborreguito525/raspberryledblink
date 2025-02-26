@@ -17,9 +17,17 @@ for ((i = 0 ; i < 10 ; i++)); do
   sleep 0
 done
 ```
-IMPORTANTE la comanda rapistill no existe en el Raspbery OS normal 
+IMPORTANTE la comanda rapistill no existe en el Raspbery OS 64bits i 32 bits (default).
 ```blue 
 sudo rpicam-still --output /var/out.jpg
+```
+Para hacer-lo en esta nueva version:
+```blue
+#!/bin/bash
+
+mkdir /home/usuari/Documents/$(date +%F%R)
+rpicam-still -timeout 59000 -timelapse 1000 -o /home/usuari/Documents/$(date +F%R)/image%04d.jpg
+sudo python3 led.py
 ```
 I luego con el archivo de rasbberry tambien almacenado en la carpeta de root para poder ser exectuado sin tocar el script.
 
